@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity" >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etUserName"
+            android:layout_marginTop="15dp"
+            android:ems="15"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etPassword2"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etFirstName"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etLastName"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserName"
+            android:layout_alignRight="@+id/etUserName"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/address" />
+
+        <Button
+            android:id="@+id/bSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign_up" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="15"
+            android:hint="@string/username" />
+    </RelativeLayout>
+
+</ScrollView>
